@@ -1,0 +1,2 @@
+-Change format of phone column to +#
+-To set up GSuite: https://www.youtube.com/watch?v=GB7s0XGUQKg
