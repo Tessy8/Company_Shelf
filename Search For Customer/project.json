@@ -1,6 +1,6 @@
 {
-  "name": "Read Customer Names for Transaction",
-  "description": "This process reads customer names fom a database.",
+  "name": "Search For Customer",
+  "description": "This process searches for a customer and outputs the customer's transactions and/or details.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -47,7 +47,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "5d218c7c-7a84-4aaf-9793-ccebcc2da179",
+      "uniqueId": "45d7e939-00c9-4725-ad1f-76aad1398eac",
       "input": [],
       "output": []
     }
