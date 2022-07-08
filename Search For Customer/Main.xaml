@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_CustomerName="Rotimi" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="out_TransactionsDt" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="out_CustomersDt" Type="OutArgument(sd:DataTable)" />
@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>834,1157</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>969,2957</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -84,19 +84,19 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence &quot;Search for a Customer&quot;" sap:VirtualizedContainerService.HintSize="480,1092" sap2010:WorkflowViewState.IdRef="Sequence_21">
+  <Sequence DisplayName="Sequence &quot;Search for a Customer&quot;" sap:VirtualizedContainerService.HintSize="979,2892" sap2010:WorkflowViewState.IdRef="Sequence_21">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try to Search for a Customer" sap:VirtualizedContainerService.HintSize="438,1000" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try to Search for a Customer" sap:VirtualizedContainerService.HintSize="937,2800" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="This process searches for a customer and outputs the customer's transactions and/or details." DisplayName="Search for a Customer" sap:VirtualizedContainerService.HintSize="295,773" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence sap2010:Annotation.AnnotationText="This process searches for a customer and outputs the customer's transactions and/or details." DisplayName="Search for a Customer" sap:VirtualizedContainerService.HintSize="899,2573" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="CustomersSheetID" />
             <Variable x:TypeArguments="x:String" Name="TransactionsSheetID" />
@@ -110,7 +110,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Searching for a customer from the database.&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="857,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Searching for a customer from the database.&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -118,7 +118,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Drive to find Customers Sheet" sap:VirtualizedContainerService.HintSize="253,78" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
+          <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Drive to find Customers Sheet" sap:VirtualizedContainerService.HintSize="857,78" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
             <ugad:GoogleDriveApplicationScope.Body>
               <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                 <ActivityAction.Argument>
@@ -156,7 +156,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ugad:GoogleDriveApplicationScope>
-          <ui:BuildDataTable DataTable="[out_CustomersDt]" DisplayName="Build Customer Data Table" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NAME&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ADDRESS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PHONE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;EMAIL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;GENDER&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;CLASS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;OTHERS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+          <ui:BuildDataTable DataTable="[out_CustomersDt]" DisplayName="Build Customer Data Table" sap:VirtualizedContainerService.HintSize="857,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;NAME&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ADDRESS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PHONE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EMAIL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;GENDER&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CLASS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OTHERS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -164,7 +164,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:BuildDataTable>
-          <ui:BuildDataTable DataTable="[out_TransactionsDt]" DisplayName="Build TransactionData Table" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NAME&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ITEMS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DATE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NOTES&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+          <ui:BuildDataTable DataTable="[out_TransactionsDt]" DisplayName="Build TransactionData Table" sap:VirtualizedContainerService.HintSize="857,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NAME&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ITEMS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DATE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:dateTime&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NOTES&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -172,34 +172,34 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:BuildDataTable>
-          <If Condition="[CustomersSheetID &lt;&gt; &quot;&quot;]" DisplayName="If Customer Sheet is found,  read from it" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[CustomersSheetID &lt;&gt; &quot;&quot;]" DisplayName="If Customer Sheet is found,  read from it" sap:VirtualizedContainerService.HintSize="857,1877" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Add" sap:VirtualizedContainerService.HintSize="295,170" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Add" sap:VirtualizedContainerService.HintSize="821,1690" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" Action="UseExisting" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Spreadsheet" Filename="Customers Sheet" sap:VirtualizedContainerService.HintSize="253,78" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" ParentFolderId="1C2VxmOwNQ0NOI4TbxRK_l6dbiq1gRBFL" ParentFolderPath="My Drive&gt;Company Shelf" SpreadsheetId="1lWJPbIxGk1TyH6ymevOlJP3__LzLqmufGQR6SEKmyCc" SpreadsheetName="Customers Sheet" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
+                <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" Action="UseExisting" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Spreadsheet" Filename="Customers Sheet" sap:VirtualizedContainerService.HintSize="779,1598" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" ParentFolderId="1C2VxmOwNQ0NOI4TbxRK_l6dbiq1gRBFL" ParentFolderPath="My Drive&gt;Company Shelf" SpreadsheetId="1lWJPbIxGk1TyH6ymevOlJP3__LzLqmufGQR6SEKmyCc" SpreadsheetName="Customers Sheet" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
                   <ugas:GoogleSheetsApplicationScope.Body>
                     <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="CustomersSheet" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,325" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="745,1317" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Customers Sheet" GoogleSpreadsheet="[CustomersSheet]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[CustomersSheetDt]" SheetName="Sheet1">
+                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Customers Sheet" GoogleSpreadsheet="[CustomersSheet]" sap:VirtualizedContainerService.HintSize="703,51" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[CustomersSheetDt]" SheetName="Sheet1">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -207,7 +207,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uga:ReadRange>
-                        <If Condition="[in_CustomerName &lt;&gt; &quot;none&quot;]" DisplayName="If Customer name is not none, find details on it" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If Condition="[in_CustomerName &lt;&gt; &quot;none&quot;]" DisplayName="If Customer name is not none, find details on it" sap:VirtualizedContainerService.HintSize="703,51" sap2010:WorkflowViewState.IdRef="If_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -268,21 +268,21 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <If Condition="[TransactionsSheetID &lt;&gt; &quot;&quot;]" DisplayName="If Transaction Sheet is found,  read from it" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_5">
+                        <If Condition="[TransactionsSheetID &lt;&gt; &quot;&quot;]" DisplayName="If Transaction Sheet is found,  read from it" sap:VirtualizedContainerService.HintSize="703,1043" sap2010:WorkflowViewState.IdRef="If_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" Action="UseExisting" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="434,515" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_4" Mode="Browse" SpreadsheetId="1n7JHDR0psolAJzZjUZA7yzSxCdyMLFV6qiIoBUd_0u0" SpreadsheetName="Transaction Sheet" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
+                            <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" Action="UseExisting" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="667,856" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_4" Mode="Browse" SpreadsheetId="1n7JHDR0psolAJzZjUZA7yzSxCdyMLFV6qiIoBUd_0u0" SpreadsheetName="Transaction Sheet" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
                               <ugas:GoogleSheetsApplicationScope.Body>
                                 <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="TransactionsSheet" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="633,575" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="sd:DataTable" Name="TransactionsSheetDt" />
                                     </Sequence.Variables>
@@ -291,7 +291,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Transaction Sheet" GoogleSpreadsheet="[TransactionsSheet]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ReadRange_4" IncludeHeaders="True" Result="[TransactionsSheetDt]" SheetName="Sheet1">
+                                    <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Transaction Sheet" GoogleSpreadsheet="[TransactionsSheet]" sap:VirtualizedContainerService.HintSize="591,51" sap2010:WorkflowViewState.IdRef="ReadRange_4" IncludeHeaders="True" Result="[TransactionsSheetDt]" SheetName="Sheet1">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -299,15 +299,15 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uga:ReadRange>
-                                    <If Condition="[in_CustomerName &lt;&gt; &quot;none&quot;]" DisplayName="If Customer name is not none, find details on it" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_6">
+                                    <If Condition="[in_CustomerName &lt;&gt; &quot;none&quot;]" DisplayName="If Customer name is not none, find details on it" sap:VirtualizedContainerService.HintSize="591,392" sap2010:WorkflowViewState.IdRef="If_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Add to out_CustomerDt" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                        <Sequence DisplayName="Add to out_CustomerDt" sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:Int32" Name="CustomerRowIndex" />
                                           </Sequence.Variables>
@@ -341,6 +341,25 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:FilterDataTable>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="326,272" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:OutputDataTable DataTable="[out_TransactionsDt]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="284,79" sap2010:WorkflowViewState.IdRef="OutputDataTable_4" Text="[Output]" />
+                                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="284,61" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[out_TransactionsDt.Rows(3)(2).GetType.ToString]" />
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:CommentOut>
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
@@ -381,7 +400,7 @@
                   </ugas:GoogleSheetsApplicationScope.Body>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -398,7 +417,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="857,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="326,464" sap2010:WorkflowViewState.IdRef="Sequence_20">
                 <sap:WorkflowViewStateService.ViewState>
@@ -433,7 +452,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Gotten customer details from the database.&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="857,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Gotten customer details from the database.&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -444,7 +463,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="903,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -455,7 +474,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message (Error)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;There was an error while reading customer's details and transactions.&quot;]">
+            <ui:LogMessage DisplayName="Log Message (Error)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;There was an error while reading customer's details and transactions.&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
