@@ -1,6 +1,6 @@
 {
-  "name": "Search For Customer",
-  "description": "This process searches for a customer and outputs the customer's transactions and/or details.",
+  "name": "Read Init",
+  "description": "This process reads the customer names, class names, employee names, notes and templates.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.3.0",
-  "projectVersion": "1.0.3",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -47,7 +47,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "45d7e939-00c9-4725-ad1f-76aad1398eac",
+      "uniqueId": "9b9a61e4-c879-4111-be13-6090e2ed1e1f",
       "input": [],
       "output": []
     }
