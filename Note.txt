@@ -2,3 +2,17 @@
 -To set up GSuite: https://www.youtube.com/watch?v=GB7s0XGUQKg
 
 https://docs.uipath.com/apps/docs/packaging-an-app-as-a-client  --> Packaging app
+
+Check Mailchimp in Integration service
+
+Company Shelf with Data Service
+1) Create entity for customers: Customers Sheets and Customer Sheets for transactions
+2) Create entity for class: Class Sheets
+3) Create entity for templates: Templates Sheets
+4) Create entity for employees: Employees Sheets
+5) Create entity for notes: Notes Sheets
+6) Create entity for transactions: Transactions Sheets
+
+Main page: loads customers for Remove Customers, Send Email to a Customer and Search for a customer dropdown; also loads customers for transactions...; loads class for Add New Customer, Send Email to a Class of Customers and Add New Class; loads templates for Edit Email before Sending, Select Email Template to use, Select Email Template to be Edited and Edit Email Template; loads employees for Select Employee to be sent an Email and Remove Employee; loads notes for View Note; loads table of customer details and transactions for Search for a customer.
+
+Email status is a notification after sending email.? with the out_EmailStatus in the notification?
