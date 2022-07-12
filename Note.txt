@@ -17,5 +17,6 @@ Main page: loads customers for Remove Customers, Send Email to a Customer and Se
 
 Email status is a notification after sending email.? with the out_EmailStatus in the notification?
 
-101583839
+Send email_DS should accept email to be sent and datatable containing customers of a class also.
+It should not read sheets
 
