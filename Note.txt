@@ -5,6 +5,8 @@ https://docs.uipath.com/apps/docs/packaging-an-app-as-a-client  --> Packaging ap
 
 Check Mailchimp in Integration service
 
+*Pagination in Query Entity Records supports 1000 records?
+
 Company Shelf with Data Service
 1) Create entity for customers: Customers Sheets and Customer Sheets for transactions
 2) Create entity for class: Class Sheets
@@ -20,3 +22,5 @@ Email status is a notification after sending email.? with the out_EmailStatus in
 Send email_DS should accept email to be sent and datatable containing customers of a class also.
 It should not read sheets
 
+Import data into those Google sheets on request.
+Create a page to do that
