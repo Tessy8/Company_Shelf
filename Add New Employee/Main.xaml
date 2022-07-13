@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>834,2522</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>834,492</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -92,15 +92,15 @@
       <AssemblyReference>NPOI</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence &quot;Add a New Employee&quot;" sap:VirtualizedContainerService.HintSize="682,2457" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence DisplayName="Sequence &quot;Add a New Employee&quot;" sap:VirtualizedContainerService.HintSize="480,427" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try to Add a New Employee" sap:VirtualizedContainerService.HintSize="640,2365" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try to Add a New Employee" sap:VirtualizedContainerService.HintSize="438,335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="This process adds a new customer to a database." DisplayName="Add New Employee" sap:VirtualizedContainerService.HintSize="602,2138" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence sap2010:Annotation.AnnotationText="This process adds a new customer to a database." DisplayName="Add New Employee" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="EmployeesSheetID" />
             <Variable x:TypeArguments="sd:DataTable" Name="EmployeesSheetDt" />
@@ -108,12 +108,12 @@
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Adding an employee to the database.&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Adding an employee to the database.&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -121,7 +121,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Drive to find Employees Sheet" sap:VirtualizedContainerService.HintSize="560,78" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
+          <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Drive to find Employees Sheet" sap:VirtualizedContainerService.HintSize="253,78" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
             <ugad:GoogleDriveApplicationScope.Body>
               <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                 <ActivityAction.Argument>
@@ -151,7 +151,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ugad:GoogleDriveApplicationScope>
-          <If Condition="[EmployeesSheetID = &quot;&quot;]" DisplayName="If Employees Sheet is not found create it" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[EmployeesSheetID = &quot;&quot;]" DisplayName="If Employees Sheet is not found create it" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -216,7 +216,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" Action="UseExisting" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Spreadsheet" Filename="Customers Sheet" sap:VirtualizedContainerService.HintSize="560,1624" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_2" Mode="Browse" ParentFolderId="1C2VxmOwNQ0NOI4TbxRK_l6dbiq1gRBFL" ParentFolderPath="My Drive&gt;Company Shelf" SpreadsheetId="1v8c9IMfXgmrbD9x8YwBdMFVgVAM30CtwKpnTFBq1Exo" SpreadsheetName="Employees Sheet" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
+          <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Timeout="{x:Null}" Account="adamstestimony@gmail.com" Action="UseExisting" CredentialID="288739373084-unpdam3i2m5k0ismsajvht78d9lcc20g.apps.googleusercontent.com" CredentialSecret="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" DisplayName="Use Google Spreadsheet" Filename="Customers Sheet" sap:VirtualizedContainerService.HintSize="253,78" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_2" Mode="Browse" ParentFolderId="1C2VxmOwNQ0NOI4TbxRK_l6dbiq1gRBFL" ParentFolderPath="My Drive&gt;Company Shelf" SpreadsheetId="1v8c9IMfXgmrbD9x8YwBdMFVgVAM30CtwKpnTFBq1Exo" SpreadsheetName="Employees Sheet" UseConnectionService="False" UserEmail="adamstestimony@gmail.com">
             <ugas:GoogleSheetsApplicationScope.Body>
               <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                 <ActivityAction.Argument>
@@ -346,12 +346,12 @@
             </ugas:GoogleSheetsApplicationScope.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ugas:GoogleSheetsApplicationScope>
-          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Added an employee to the database.&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="253,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Added an employee to the database.&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -362,7 +362,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="606,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
