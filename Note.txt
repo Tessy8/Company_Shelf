@@ -24,3 +24,5 @@ It should not read sheets
 
 Import data into those Google sheets on request.
 Create a page to do that
+
+Should I delete files from storage bucket after sending?
