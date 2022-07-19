@@ -26,3 +26,8 @@ Import data into those Google sheets on request.
 Create a page to do that
 
 Should I delete files from storage bucket after sending?
+
+
+COMPANY SHELF
+-Can query 10,000 records
+-Can run from android on Orchestrator

@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>961,1042</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>961,2756</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -106,7 +106,6 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -115,21 +114,21 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Sequence &quot;Send Email&quot;" sap:VirtualizedContainerService.HintSize="971,977" sap2010:WorkflowViewState.IdRef="Sequence_26">
+  <Sequence DisplayName="Sequence &quot;Send Email&quot;" sap:VirtualizedContainerService.HintSize="971,2691" sap2010:WorkflowViewState.IdRef="Sequence_26">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try to Send Email" sap:VirtualizedContainerService.HintSize="929,885" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try to Send Email" sap:VirtualizedContainerService.HintSize="929,2599" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="This process sends email(s)." DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="376,658" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <Sequence sap2010:Annotation.AnnotationText="This process sends email(s)." DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="891,2372" sap2010:WorkflowViewState.IdRef="Sequence_25">
           <Sequence.Variables>
             <Variable x:TypeArguments="ss:SecureString" Name="pwd" />
             <Variable x:TypeArguments="x:String" Name="username" />
@@ -150,7 +149,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Sending email(s)...&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="849,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Sending email(s)...&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -158,7 +157,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Gmail Login Secure Credentials" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[pwd]" PersistanceType="Enterprise" Target="Gmail_Login" Username="[username]">
+          <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Gmail Login Secure Credentials" sap:VirtualizedContainerService.HintSize="849,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[pwd]" PersistanceType="Enterprise" Target="Gmail_Login" Username="[username]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -166,16 +165,16 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </p:GetSecureCredential>
-          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Ensures maximum records are queried." Condition="[Counter &lt; MaxThreshold]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="334,262" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Ensures maximum records are queried." Condition="[Counter &lt; MaxThreshold]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="849,1976" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
             <ui:InterruptibleDoWhile.Body>
-              <Sequence DisplayName="Loop through" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_54">
+              <Sequence DisplayName="Loop through" sap:VirtualizedContainerService.HintSize="813,1780" sap2010:WorkflowViewState.IdRef="Sequence_54">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uda:QueryEntityRecords x:TypeArguments="s:CustomersSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Customer Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[CustomersRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
+                <uda:QueryEntityRecords x:TypeArguments="s:CustomersSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Customer Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="771,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[CustomersRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -183,7 +182,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uda:QueryEntityRecords>
-                <uda:QueryEntityRecords x:TypeArguments="s:EmployeesSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Employee Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[EmployeesRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
+                <uda:QueryEntityRecords x:TypeArguments="s:EmployeesSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Employee Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="771,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[EmployeesRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -191,11 +190,11 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uda:QueryEntityRecords>
-                <If Condition="[in_File = &quot;&quot;]" DisplayName="If no file is chosen, do not attach any file" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_22">
+                <If Condition="[in_File = &quot;&quot;]" DisplayName="If no file is chosen, do not attach any file" sap:VirtualizedContainerService.HintSize="771,1315" sap2010:WorkflowViewState.IdRef="If_22">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
@@ -206,15 +205,15 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="718,1564" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Send email to customer" sap:VirtualizedContainerService.HintSize="682,1378" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Send email to customer" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Int32" Name="RowIndex" />
                               <Variable x:TypeArguments="x:String" Name="EmailAddress" />
@@ -227,34 +226,34 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each customer" sap:VirtualizedContainerService.HintSize="640,1286" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[CustomersRecord]">
+                            <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each customer" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[CustomersRecord]">
                               <ui:ForEach.Body>
                                 <ActivityAction x:TypeArguments="s:CustomersSheet">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="s:CustomersSheet" Name="item" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1163" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[item.NAME = in_CustomerName]" DisplayName="If customer name is found, ..." sap:VirtualizedContainerService.HintSize="562,1071" sap2010:WorkflowViewState.IdRef="If_13">
+                                    <If Condition="[item.NAME = in_CustomerName]" DisplayName="If customer name is found, ..." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_13">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Sequence to send email" sap:VirtualizedContainerService.HintSize="526,885" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                        <Sequence DisplayName="Sequence to send email" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                          <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
                                             </Assign.To>
@@ -262,7 +261,7 @@
                                               <InArgument x:TypeArguments="x:String">[item.EMAIL]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Assign_2">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailBody]</OutArgument>
                                             </Assign.To>
@@ -271,7 +270,7 @@
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER).Replace("{class}", item.CLASS).Replace("{others}", item.OTHERS)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Assign_3">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailSubject]</OutArgument>
                                             </Assign.To>
@@ -280,7 +279,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER).Replace("{class}", item.CLASS).Replace("{others}", item.OTHERS)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="484,423" sap2010:WorkflowViewState.IdRef="If_1">
+                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_1">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -318,7 +317,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               </Sequence>
                                             </If.Else>
                                           </If>
-                                          <ui:Break sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                          <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_1" />
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
@@ -336,7 +335,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                               </ui:ForEach.Body>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -353,7 +352,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_Class &lt;&gt; &quot;&quot;]" DisplayName="If class is selected, send email to all customers with the class." sap:VirtualizedContainerService.HintSize="718,1502" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If Condition="[in_Class &lt;&gt; &quot;&quot;]" DisplayName="If class is selected, send email to all customers with the class." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -361,13 +360,13 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Send to class of customers" sap:VirtualizedContainerService.HintSize="682,1316" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <Sequence DisplayName="Send to class of customers" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each customer" sap:VirtualizedContainerService.HintSize="640,1224" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[CustomersRecord]">
+                            <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each customer" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[CustomersRecord]">
                               <ui:ForEach.Body>
                                 <ActivityAction x:TypeArguments="s:CustomersSheet">
                                   <ActivityAction.Argument>
@@ -492,7 +491,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_CustomerName = &quot;all&quot;]" DisplayName="If customer name selected is all, send email to all customers." sap:VirtualizedContainerService.HintSize="718,1502" sap2010:WorkflowViewState.IdRef="If_7">
+                      <If Condition="[in_CustomerName = &quot;all&quot;]" DisplayName="If customer name selected is all, send email to all customers." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -632,7 +631,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_EmployeeName &lt;&gt; &quot;&quot; And in_EmployeeName &lt;&gt; &quot;all&quot;]" DisplayName="If an employee name was selected, send email to the employee." sap:VirtualizedContainerService.HintSize="718,1564" sap2010:WorkflowViewState.IdRef="If_9">
+                      <If Condition="[in_EmployeeName &lt;&gt; &quot;&quot; And in_EmployeeName &lt;&gt; &quot;all&quot;]" DisplayName="If an employee name was selected, send email to the employee." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_9">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -773,7 +772,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_EmployeeName = &quot;all&quot;]" DisplayName="If employee name selected is all, send email to all employees." sap:VirtualizedContainerService.HintSize="718,1502" sap2010:WorkflowViewState.IdRef="If_11">
+                      <If Condition="[in_EmployeeName = &quot;all&quot;]" DisplayName="If employee name selected is all, send email to all employees." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_11">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -922,17 +921,17 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="File is attached" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                    <Sequence DisplayName="File is attached" sap:VirtualizedContainerService.HintSize="526,1158" sap2010:WorkflowViewState.IdRef="Sequence_57">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="FilePath" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_25">
+                      <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_25">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1007,7 +1006,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER).Replace("{class}", item.CLASS).Replace("{others}", item.OTHERS)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="514,873" sap2010:WorkflowViewState.IdRef="If_23">
+                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_23">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1015,18 +1014,18 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,686" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,605" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="436,132" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_2" Path="[in_File]" StorageBucketName="SendEmail_File">
+                                                <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_2" Path="[in_File]" StorageBucketName="SendEmail_File">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </ucas:DownloadStorageFile>
@@ -1053,9 +1052,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                 <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="SendMail_10" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                      <InArgument x:TypeArguments="x:String">
-                                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FilePath" />
-                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[FilePath]</InArgument>
                                                     </scg:List>
                                                   </ui:SendMail.Files>
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -1112,7 +1109,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_Class &lt;&gt; &quot;&quot;]" DisplayName="If class is selected, send email to all customers with the class." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_28">
+                      <If Condition="[in_Class &lt;&gt; &quot;&quot;]" DisplayName="If class is selected, send email to all customers with the class." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_28">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1127,7 +1124,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_3" Path="[in_File]" StorageBucketName="SendEmail_File">
+                            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="True" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_3" Path="[in_File]" StorageBucketName="SendEmail_File">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1215,9 +1212,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                 <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendMail_11" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                      <InArgument x:TypeArguments="x:String">
-                                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FilePath" />
-                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[FilePath]</InArgument>
                                                     </scg:List>
                                                   </ui:SendMail.Files>
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -1273,7 +1268,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_CustomerName = &quot;all&quot;]" DisplayName="If customer name selected is all, send email to all customers." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_31">
+                      <If Condition="[in_CustomerName = &quot;all&quot;]" DisplayName="If customer name selected is all, send email to all customers." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_31">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1288,7 +1283,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="640,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_4" Path="[in_File]" StorageBucketName="SendEmail_File">
+                            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="True" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_4" Path="[in_File]" StorageBucketName="SendEmail_File">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1296,7 +1291,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ucas:DownloadStorageFile>
-                            <Assign DisplayName="Assign FilePath" sap:VirtualizedContainerService.HintSize="640,60" sap2010:WorkflowViewState.IdRef="Assign_54">
+                            <Assign DisplayName="Assign FilePath" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_54">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[FilePath]</OutArgument>
                               </Assign.To>
@@ -1304,7 +1299,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                 <InArgument x:TypeArguments="x:String">[Environment.GetEnvironmentVariable("UserProfile") + "\Downloads\" + in_File]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each customer" sap:VirtualizedContainerService.HintSize="640,1224" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[CustomersRecord]">
+                            <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each customer" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[CustomersRecord]">
                               <ui:ForEach.Body>
                                 <ActivityAction x:TypeArguments="s:CustomersSheet">
                                   <ActivityAction.Argument>
@@ -1375,9 +1370,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                 <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_12" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                      <InArgument x:TypeArguments="x:String">
-                                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FilePath" />
-                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[FilePath]</InArgument>
                                                     </scg:List>
                                                   </ui:SendMail.Files>
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -1433,7 +1426,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_EmployeeName &lt;&gt; &quot;&quot; And in_EmployeeName &lt;&gt; &quot;all&quot;]" DisplayName="If an employee name was selected, send email to the employee." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_34">
+                      <If Condition="[in_EmployeeName &lt;&gt; &quot;&quot; And in_EmployeeName &lt;&gt; &quot;all&quot;]" DisplayName="If an employee name was selected, send email to the employee." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_34">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1441,26 +1434,26 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Send email to employee" sap:VirtualizedContainerService.HintSize="682,1650" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                          <Sequence DisplayName="Send email to employee" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_84">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:ForEach x:TypeArguments="s:EmployeesSheet" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="640,1558" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[EmployeesRecord]">
+                            <ui:ForEach x:TypeArguments="s:EmployeesSheet" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEach`1_11" Values="[EmployeesRecord]">
                               <ui:ForEach.Body>
                                 <ActivityAction x:TypeArguments="s:EmployeesSheet">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="s:EmployeesSheet" Name="item" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1435" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_83">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[item.NAME = in_EmployeeName]" DisplayName="If employee name is found, ..." sap:VirtualizedContainerService.HintSize="562,1343" sap2010:WorkflowViewState.IdRef="If_33">
+                                    <If Condition="[item.NAME = in_EmployeeName]" DisplayName="If employee name is found, ..." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_33">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1468,14 +1461,14 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Sequence to send email" sap:VirtualizedContainerService.HintSize="526,1157" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                        <Sequence DisplayName="Sequence to send email" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_81">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_45">
+                                          <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_45">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
                                             </Assign.To>
@@ -1483,7 +1476,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               <InArgument x:TypeArguments="x:String">[item.EMAIL]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Assign_46">
+                                          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Assign_46">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailBody]</OutArgument>
                                             </Assign.To>
@@ -1492,7 +1485,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Assign_47">
+                                          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Assign_47">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailSubject]</OutArgument>
                                             </Assign.To>
@@ -1501,7 +1494,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="484,695" sap2010:WorkflowViewState.IdRef="If_32">
+                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_32">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1509,14 +1502,14 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,509" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,428" sap2010:WorkflowViewState.IdRef="Sequence_79">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_5" Path="[in_File]" StorageBucketName="SendEmail_File">
+                                                <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_5" Path="[in_File]" StorageBucketName="SendEmail_File">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1535,9 +1528,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                 <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_13" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                      <InArgument x:TypeArguments="x:String">
-                                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FilePath" />
-                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[FilePath]</InArgument>
                                                     </scg:List>
                                                   </ui:SendMail.Files>
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -1559,7 +1550,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               </Sequence>
                                             </If.Else>
                                           </If>
-                                          <ui:Break sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Break_4" />
+                                          <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_4" />
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
@@ -1594,10 +1585,10 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_EmployeeName = &quot;all&quot;]" DisplayName="If employee name selected is all, send email to all employees." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_37">
+                      <If Condition="[in_EmployeeName = &quot;all&quot;]" DisplayName="If employee name selected is all, send email to all employees." sap:VirtualizedContainerService.HintSize="484,520" sap2010:WorkflowViewState.IdRef="If_37">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -1615,7 +1606,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_6" Path="[in_File]" StorageBucketName="SendEmail_File">
+                            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="True" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_6" Path="[in_File]" StorageBucketName="SendEmail_File">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1637,14 +1628,14 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="s:EmployeesSheet" Name="item" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1373" sap2010:WorkflowViewState.IdRef="Sequence_90">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_90">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[item.NAME &lt;&gt; &quot;all&quot;]" DisplayName="If employee name is found, ..." sap:VirtualizedContainerService.HintSize="562,1281" sap2010:WorkflowViewState.IdRef="If_36">
+                                    <If Condition="[item.NAME &lt;&gt; &quot;all&quot;]" DisplayName="If employee name is found, ..." sap:VirtualizedContainerService.HintSize="484,253" sap2010:WorkflowViewState.IdRef="If_36">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1652,14 +1643,14 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Sequence to send email" sap:VirtualizedContainerService.HintSize="526,1095" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                                        <Sequence DisplayName="Sequence to send email" sap:VirtualizedContainerService.HintSize="304,451" sap2010:WorkflowViewState.IdRef="Sequence_88">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_48">
+                                          <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_48">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
                                             </Assign.To>
@@ -1667,7 +1658,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               <InArgument x:TypeArguments="x:String">[item.EMAIL]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Assign_49">
+                                          <Assign DisplayName="Assign Email Body" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Assign_49">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailBody]</OutArgument>
                                             </Assign.To>
@@ -1676,7 +1667,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Assign_50">
+                                          <Assign DisplayName="Assign Email Subject" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Assign_50">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[EmailSubject]</OutArgument>
                                             </Assign.To>
@@ -1685,7 +1676,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
 Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}", item.PHONENUMBER).Replace("{email}", item.EMAIL).Replace("{gender}", item.GENDER)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="484,695" sap2010:WorkflowViewState.IdRef="If_35">
+                                          <If Condition="[EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If an email address is found, send" sap:VirtualizedContainerService.HintSize="484,521" sap2010:WorkflowViewState.IdRef="If_35">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1693,14 +1684,14 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,509" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="304,334" sap2010:WorkflowViewState.IdRef="Sequence_86">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ucas:DownloadStorageFile TimeoutMS="{x:Null}" ContinueOnError="False" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_7" Path="[in_File]" StorageBucketName="SendEmail_File">
+                                                <ucas:DownloadStorageFile TimeoutMS="{x:Null}" Destination="[Environment.GetEnvironmentVariable(&quot;UserProfile&quot;) + &quot;\Downloads\&quot; + in_File]" DisplayName="Download Storage File from SendEmail_File" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_7" Path="[in_File]" StorageBucketName="SendEmail_File">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1708,7 +1699,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </ucas:DownloadStorageFile>
-                                                <Assign DisplayName="Assign FilePath" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_57">
+                                                <Assign DisplayName="Assign FilePath" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_57">
                                                   <Assign.To>
                                                     <OutArgument x:TypeArguments="x:String">[FilePath]</OutArgument>
                                                   </Assign.To>
@@ -1716,12 +1707,10 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                     <InArgument x:TypeArguments="x:String">[Environment.GetEnvironmentVariable("UserProfile") + "\Downloads\" + in_File]</InArgument>
                                                   </Assign.Value>
                                                 </Assign>
-                                                <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_14" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
+                                                <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="SendMail_14" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                      <InArgument x:TypeArguments="x:String">
-                                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FilePath" />
-                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[FilePath]</InArgument>
                                                     </scg:List>
                                                   </ui:SendMail.Files>
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -1777,7 +1766,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <TryCatch DisplayName="Try to Delete files" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <TryCatch DisplayName="Try to Delete files" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1827,9 +1816,9 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Catch>
                         </TryCatch.Catches>
                       </TryCatch>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="272,244" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="526,439" sap2010:WorkflowViewState.IdRef="Sequence_96">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1865,7 +1854,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                     </Sequence>
                   </If.Else>
                 </If>
-                <Assign DisplayName="Increment counter" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_35">
+                <Assign DisplayName="Increment counter" sap:VirtualizedContainerService.HintSize="771,60" sap2010:WorkflowViewState.IdRef="Assign_35">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
                   </Assign.To>
@@ -1873,7 +1862,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                     <InArgument x:TypeArguments="x:Int32">[Counter + 1000]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="771,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="272,153" sap2010:WorkflowViewState.IdRef="Sequence_55">
                       <sap:WorkflowViewStateService.ViewState>
@@ -1900,7 +1889,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InterruptibleDoWhile>
-          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Sent email(s)&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="340,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Sent email(s)&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
