@@ -32,6 +32,19 @@ COMPANY SHELF
 -Can query 10,000 records
 -Can run from android on Orchestrator
 
+***Add Email template and Edit Email Template has a limit of 200 chars.
+***Fill in errors
 
 
 https://cloud.uipath.com/tessydmofxkc/apps_/default/run/production/IDea2cbcf7b28742d98e6adc49acee4f11
+
+
+STEPS TO PACKAGE UiPath App as Windows Executable
+1. Clone https://github.com/UiPath/AppsClientSample
+2. Modify the files as shown in https://docs.uipath.com/apps/docs/packaging-an-app-as-a-client
+3. Install npm version >8.0.0, node version >16.0.0 and nvm version >1.1.9
+4. Ensure that electron and electron-builder dependencies are installed.
+"npm install --save-dev electron-builder -g" and "npm install -g electron"
+5. In the directory that step 1 was cloned, run "npm install"
+6. Run "npm run start" to test the app.
+7. Run "npm run dist" to build the app.
