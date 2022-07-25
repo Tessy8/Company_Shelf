@@ -33,7 +33,8 @@ COMPANY SHELF
 -Can run from android on Orchestrator
 
 ***Add Email template and Edit Email Template has a limit of 200 chars.
-***Fill in errors
+***Fill in errors _/
+***Template file not showing in Edit Email before sending
 
 
 https://cloud.uipath.com/tessydmofxkc/apps_/default/run/production/IDea2cbcf7b28742d98e6adc49acee4f11
