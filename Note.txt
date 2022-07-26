@@ -49,3 +49,9 @@ STEPS TO PACKAGE UiPath App as Windows Executable
 5. In the directory that step 1 was cloned, run "npm install"
 6. Run "npm run start" to test the app.
 7. Run "npm run dist" to build the app.
+
+
+REMOVED FROM PDD
+•	Google Cloud account with Google Sheet, Drive and Gmail API installed to enable automation by granting API access to your Google G Suite applications.
+•	Create credentials in the Google Cloud account to specify the authentication type used to interact with the enabled APIs.
+
