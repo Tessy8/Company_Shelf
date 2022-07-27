@@ -35,6 +35,9 @@ COMPANY SHELF
 ***Add Email template and Edit Email Template has a limit of 200 chars.
 ***Fill in errors _/
 ***Template file not showing in Edit Email before sending
+***If Customer's email does not exist, handle... _/
+***If Add was mistakenly clicked twice, check if Name already exists before adding.. Same Name?
+***If Email is not sent, send email to ... Try Catch?
 
 
 https://cloud.uipath.com/tessydmofxkc/apps_/default/run/production/IDea2cbcf7b28742d98e6adc49acee4f11
