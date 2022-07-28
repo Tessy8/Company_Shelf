@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zCpnad8eC75XftdtD77yruhl8KC1Dh1JJ1wA1Yt6H45xHH0CHblL5O6FHT0/MbGfip2YnZfLTvDjJIJP8nfjag==",
+  "dgSpecHash": "jAMUq9Gf1iw07GEDBGq6yfZk/AeWUfoMWpKbrwZqHbeXim3IHWfosEmn04KHgOpmwFsOr/5AR3nM0hvesHaKlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\SendEmail_DS\\.local\\",
   "expectedPackageFiles": [
@@ -105,7 +105,8 @@
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.system.activities\\22.4.1\\uipath.system.activities.22.4.1.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\uipath.uiautomation.activities.22.4.5.nupkg.sha512",
-    "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.vision\\3.3.0\\uipath.vision.3.3.0.nupkg.sha512"
+    "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.vision\\3.3.0\\uipath.vision.3.3.0.nupkg.sha512",
+    "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\uipathteam.documents.tddgenerator.1.4.7221.18964.nupkg.sha512"
   ],
   "logs": []
 }

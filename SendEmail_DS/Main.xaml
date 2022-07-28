@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>961,2756</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>834,481</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -106,6 +106,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -114,21 +115,21 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Sequence &quot;Send Email&quot;" sap:VirtualizedContainerService.HintSize="971,2691" sap2010:WorkflowViewState.IdRef="Sequence_26">
+  <Sequence DisplayName="Sequence &quot;Send Email&quot;" sap:VirtualizedContainerService.HintSize="480,416" sap2010:WorkflowViewState.IdRef="Sequence_26">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try to Send Email" sap:VirtualizedContainerService.HintSize="929,2599" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try to Send Email" sap:VirtualizedContainerService.HintSize="438,324" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="This process sends email(s)." DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="891,2372" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <Sequence sap2010:Annotation.AnnotationText="This process sends email(s)." DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_25">
           <Sequence.Variables>
             <Variable x:TypeArguments="ss:SecureString" Name="pwd" />
             <Variable x:TypeArguments="x:String" Name="username" />
@@ -144,12 +145,12 @@
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="849,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Sending email(s)...&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Start)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Sending email(s)...&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -157,24 +158,26 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Gmail Login Secure Credentials" sap:VirtualizedContainerService.HintSize="849,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[pwd]" PersistanceType="Enterprise" Target="Gmail_Login" Username="[username]">
+          <p:GetSecureCredential sap2010:Annotation.AnnotationText="Get Gmail Credential from Windows Credential Manager" CredentialType="Generic" DisplayName="Get Gmail Login Secure Credentials" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[pwd]" PersistanceType="Enterprise" Target="Gmail_Login" Username="[username]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </p:GetSecureCredential>
-          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Ensures maximum records are queried." Condition="[Counter &lt; MaxThreshold]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="849,1976" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Ensures maximum records are queried." Condition="[Counter &lt; MaxThreshold]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="334,262" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
             <ui:InterruptibleDoWhile.Body>
-              <Sequence DisplayName="Loop through" sap:VirtualizedContainerService.HintSize="813,1780" sap2010:WorkflowViewState.IdRef="Sequence_54">
+              <Sequence sap2010:Annotation.AnnotationText="The maximum number of records that can be queried is 1000.&#xD;&#xA;This loops 10 times in order to query 10000 records." DisplayName="Loop through" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_54">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uda:QueryEntityRecords x:TypeArguments="s:CustomersSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Customer Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="771,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[CustomersRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
+                <uda:QueryEntityRecords x:TypeArguments="s:CustomersSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Customer Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[CustomersRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -182,7 +185,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uda:QueryEntityRecords>
-                <uda:QueryEntityRecords x:TypeArguments="s:EmployeesSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Employee Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="771,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[EmployeesRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
+                <uda:QueryEntityRecords x:TypeArguments="s:EmployeesSheet" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Employee Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[EmployeesRecord]" Skip="[Counter]" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="1000">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -190,19 +193,20 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uda:QueryEntityRecords>
-                <If Condition="[in_File = &quot;&quot;]" DisplayName="If no file is chosen, do not attach any file" sap:VirtualizedContainerService.HintSize="771,1315" sap2010:WorkflowViewState.IdRef="If_22">
+                <If Condition="[in_File = &quot;&quot;]" DisplayName="If no file is chosen, do not attach any file" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_22">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="File is not attached" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                    <Sequence sap2010:Annotation.AnnotationText="If there's no attachment to be sent alongside the email, find which one of customers or employees to send an email to and send." DisplayName="File is not attached" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_56">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_2">
@@ -214,12 +218,6 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
                           <Sequence DisplayName="Send email to customer" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                            <Sequence.Variables>
-                              <Variable x:TypeArguments="x:Int32" Name="RowIndex" />
-                              <Variable x:TypeArguments="x:String" Name="EmailAddress" />
-                              <Variable x:TypeArguments="x:String" Name="Subject" />
-                              <Variable x:TypeArguments="x:String" Name="EmailBody" />
-                            </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -287,14 +285,14 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,237" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
+                                                <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Bcc="[in_Bcc]" Body="[EmailBody]" Cc="[in_Cc]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
                                                   </ui:SendMail.Files>
@@ -921,17 +919,18 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="File is attached" sap:VirtualizedContainerService.HintSize="526,1158" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                    <Sequence sap2010:Annotation.AnnotationText="If there's an attachment to be sent alongside the email, find which one of customers or employees to send an email to, attach the file and send." DisplayName="File is attached" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_57">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="FilePath" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_25">
+                      <If Condition="[in_CustomerName &lt;&gt; &quot;&quot; And in_CustomerName &lt;&gt; &quot;all&quot;]" DisplayName="If a customer name was selected, send email to the customer." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_25">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1109,7 +1108,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_Class &lt;&gt; &quot;&quot;]" DisplayName="If class is selected, send email to all customers with the class." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_28">
+                      <If Condition="[in_Class &lt;&gt; &quot;&quot;]" DisplayName="If class is selected, send email to all customers with the class." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_28">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1268,7 +1267,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_CustomerName = &quot;all&quot;]" DisplayName="If customer name selected is all, send email to all customers." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_31">
+                      <If Condition="[in_CustomerName = &quot;all&quot;]" DisplayName="If customer name selected is all, send email to all customers." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_31">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1426,7 +1425,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_EmployeeName &lt;&gt; &quot;&quot; And in_EmployeeName &lt;&gt; &quot;all&quot;]" DisplayName="If an employee name was selected, send email to the employee." sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_34">
+                      <If Condition="[in_EmployeeName &lt;&gt; &quot;&quot; And in_EmployeeName &lt;&gt; &quot;all&quot;]" DisplayName="If an employee name was selected, send email to the employee." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_34">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1585,15 +1584,15 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[in_EmployeeName = &quot;all&quot;]" DisplayName="If employee name selected is all, send email to all employees." sap:VirtualizedContainerService.HintSize="484,520" sap2010:WorkflowViewState.IdRef="If_37">
+                      <If Condition="[in_EmployeeName = &quot;all&quot;]" DisplayName="If employee name selected is all, send email to all employees." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_37">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Send email to employee" sap:VirtualizedContainerService.HintSize="304,334" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                          <Sequence DisplayName="Send email to employee" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_91">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Int32" Name="RowIndex" />
                               <Variable x:TypeArguments="x:String" Name="EmailAddress" />
@@ -1602,7 +1601,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -1766,7 +1765,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Sequence>
                         </If.Else>
                       </If>
-                      <TryCatch DisplayName="Try to Delete files" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <TryCatch DisplayName="Try to Delete files" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1774,11 +1773,12 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <TryCatch.Try>
-                          <Sequence DisplayName="Delete" sap:VirtualizedContainerService.HintSize="272,335" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                          <Sequence sap2010:Annotation.AnnotationText="Delete files after usage." DisplayName="Delete" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_94">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <ucas:DeleteStorageFile TimeoutMS="{x:Null}" ContinueOnError="True" DisplayName="Delete Storage File" sap:VirtualizedContainerService.HintSize="230,51" sap2010:WorkflowViewState.IdRef="DeleteStorageFile_1" Path="[in_File]" StorageBucketName="SendEmail_File">
@@ -1816,70 +1816,22 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           </Catch>
                         </TryCatch.Catches>
                       </TryCatch>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                        <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="526,439" sap2010:WorkflowViewState.IdRef="Sequence_96">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[FilePath]" />
-                            <If Condition="[Counter &gt; 8000]" DisplayName="If last loop, delete" sap:VirtualizedContainerService.HintSize="230,51" sap2010:WorkflowViewState.IdRef="If_38">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <If.Else>
-                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_95">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </Sequence>
-                              </If.Else>
-                            </If>
-                          </Sequence>
-                        </ui:CommentOut.Body>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:CommentOut>
                     </Sequence>
                   </If.Else>
                 </If>
-                <Assign DisplayName="Increment counter" sap:VirtualizedContainerService.HintSize="771,60" sap2010:WorkflowViewState.IdRef="Assign_35">
+                <Assign sap2010:Annotation.AnnotationText="Variable to keep track of the loop." DisplayName="Increment counter" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_35">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Int32">[Counter + 1000]</InArgument>
                   </Assign.Value>
-                </Assign>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="771,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="272,153" sap2010:WorkflowViewState.IdRef="Sequence_55">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Counter.ToString]" />
-                    </Sequence>
-                  </ui:CommentOut.Body>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
+                </Assign>
               </Sequence>
             </ui:InterruptibleDoWhile.Body>
             <sap:WorkflowViewStateService.ViewState>
@@ -1889,7 +1841,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InterruptibleDoWhile>
-          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="340,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Sent email(s)&quot;]">
+          <ui:LogMessage DisplayName="Log Message (Done)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Sent email(s)&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1900,7 +1852,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s1:Exception" sap:VirtualizedContainerService.HintSize="895,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s1:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1911,7 +1863,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s1:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message (Error)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;There was a problem while sending email.&quot;]">
+            <ui:LogMessage DisplayName="Log Message (Error)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;There was a problem while sending email.&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>

@@ -2228,6 +2228,17 @@
           "lib/net461/UiPath.Vision.Tesseract.dll": {},
           "lib/net461/UiPath.Vision.dll": {}
         }
+      },
+      "UiPathTeam.Documents.TDDGenerator/1.4.7221.18964": {
+        "type": "package",
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/Newtonsoft.Json.dll": {},
+          "lib/net461/UPathTeam.Documents.TDDGenerator.dll": {},
+          "lib/net461/Xceed.Words.NET.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win10-x64": {
@@ -4441,6 +4452,17 @@
           "lib/net461/UiPath.Vision.Microsoft.dll": {},
           "lib/net461/UiPath.Vision.Tesseract.dll": {},
           "lib/net461/UiPath.Vision.dll": {}
+        }
+      },
+      "UiPathTeam.Documents.TDDGenerator/1.4.7221.18964": {
+        "type": "package",
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/Newtonsoft.Json.dll": {},
+          "lib/net461/UPathTeam.Documents.TDDGenerator.dll": {},
+          "lib/net461/Xceed.Words.NET.dll": {}
         }
       }
     }
@@ -8381,6 +8403,19 @@
         "uipath.vision.3.3.0.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
+    },
+    "UiPathTeam.Documents.TDDGenerator/1.4.7221.18964": {
+      "sha512": "Vg/hHPZboURVCT16Scu2Q/O6lwqt7WFAFLM7bsQkhTKDjub6QZC6+baZv0skJgePu90hOZH53zrvOvtzvLD+PQ==",
+      "type": "package",
+      "path": "uipathteam.documents.tddgenerator/1.4.7221.18964",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net461/Newtonsoft.Json.dll",
+        "lib/net461/UPathTeam.Documents.TDDGenerator.dll",
+        "lib/net461/Xceed.Words.NET.dll",
+        "uipathteam.documents.tddgenerator.1.4.7221.18964.nupkg.sha512",
+        "uipathteam.documents.tddgenerator.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -8389,7 +8424,8 @@
       "UiPath.Excel.Activities >= 2.12.3 <= 2.12.3",
       "UiPath.Mail.Activities >= 1.15.2 <= 1.15.2",
       "UiPath.System.Activities >= 22.4.1 <= 22.4.1",
-      "UiPath.UIAutomation.Activities >= 22.4.5 <= 22.4.5"
+      "UiPath.UIAutomation.Activities >= 22.4.5 <= 22.4.5",
+      "UiPathTeam.Documents.TDDGenerator >= 1.4.7221.18964 <= 1.4.7221.18964"
     ]
   },
   "packageFolders": {
@@ -8425,6 +8461,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[22.4.5, 22.4.5]"
+          },
+          "UiPathTeam.Documents.TDDGenerator": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.4.7221.18964, 1.4.7221.18964]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\runtime.json"
