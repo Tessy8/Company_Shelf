@@ -61,3 +61,6 @@ REMOVED FROM PDD
 
 
 Api call quota reached. Retry after next UTC day 00:00. Env: 87d8e8fb-8900-ed11-b47a-28187815670d
+
+Add feature to send scheduled birthday messages...
+How to integrate the app into a website? -> Jot down
