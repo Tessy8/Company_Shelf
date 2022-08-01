@@ -1,6 +1,6 @@
 {
-  "name": "SendEmail_DS",
-  "description": "This process sends emails.",
+  "name": "Send BirthDay Email Msg",
+  "description": "This process sends emails to people on their birthday.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[2.0.0]",
@@ -15,13 +15,13 @@
     {
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "Tessy",
-      "namespace": "SendEmail_DS",
-      "uniqueReference": "mo9mwMpnpKzHQNEJmgDNHhq5/jvnCg3ErD76iniZJwI="
+      "namespace": "Send_BirthDay_Email_Msg",
+      "uniqueReference": "vnEzBwKfa5wKdxE0eHzQ/lqY0Tx4Gdw44ZWuAUAk9fE="
     }
   ],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.3.0",
-  "projectVersion": "1.0.10",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -55,7 +55,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "a4312384-2c83-4419-ab39-1f948b1ac591",
+      "uniqueId": "f6d0cb00-e3a7-41fd-a0ae-372b0bb3e863",
       "input": [],
       "output": []
     }

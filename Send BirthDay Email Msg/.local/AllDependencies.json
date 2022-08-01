@@ -8694,11 +8694,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "SendEmail_DS",
-      "projectName": "SendEmail_DS",
-      "projectPath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\SendEmail_DS\\.local",
+      "projectUniqueName": "Send BirthDay Email Msg",
+      "projectName": "Send BirthDay Email Msg",
+      "projectPath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\Send BirthDay Email Msg\\.local",
       "packagesPath": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\SendEmail_DS\\.local"
+      "outputPath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\Send BirthDay Email Msg\\.local"
     },
     "frameworks": {
       "net461": {

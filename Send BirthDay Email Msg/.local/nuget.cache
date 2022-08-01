@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zCpnad8eC75XftdtD77yruhl8KC1Dh1JJ1wA1Yt6H45xHH0CHblL5O6FHT0/MbGfip2YnZfLTvDjJIJP8nfjag==",
+  "dgSpecHash": "Gnmt6xq8xV+sxqOXt792h+8+0QXSvDIhKMKkkaN2E6UpaDJM0D2aBapbFGsC6iAKOWtqu9JxpqWH6lWRmUth3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\SendEmail_DS\\.local\\",
+  "projectFilePath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\Send BirthDay Email Msg\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\credentialmanagement\\1.0.2\\credentialmanagement.1.0.2.nupkg.sha512",

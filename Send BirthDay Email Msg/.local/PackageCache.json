@@ -2,18 +2,6 @@
   "Packages": [
     {
       "Package": {
-        "Id": "UiPath.DataService.Activities",
-        "Version": "21.10.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1\\lib/net461/UiPath.DataService.Activities.Core.dll",
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1\\lib/net461/UiPath.DataService.Activities.Design.dll"
-      ],
-      "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1"
-    },
-    {
-      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.12.3"
       },
@@ -222,6 +210,18 @@
         "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\lib/net461/UiPath.Credentials.Activities.dll"
       ],
       "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.credentials.activities\\2.0.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.DataService.Activities",
+        "Version": "21.10.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1\\lib/net461/UiPath.DataService.Activities.Core.dll",
+        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1\\lib/net461/UiPath.DataService.Activities.Design.dll"
+      ],
+      "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1"
     }
   ],
   "Conflicts": [],

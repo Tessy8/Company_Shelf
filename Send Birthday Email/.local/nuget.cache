@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "l/qAiTv+ud2rriPMUOe2CgLcwGjEFnUCsfL1Zf5R4dEe4KZ38ILIgtD36wElsb/v3rnMtANsIA3AMHJ9upEMsA==",
+  "dgSpecHash": "OQ6/G/nTAdmbhWjcf6vKY5wkv80wo7ydFrwd9EO6rURznXmm4L3/WGe2kPjxZl4ruyzwTp/VnDa3k8j7f4Zo0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\TESSY ADAMS\\Desktop\\Prog_Lang\\RPA\\Portfolio\\Company Shelf\\Send Birthday Email\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
+    "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\credentialmanagement\\1.0.2\\credentialmanagement.1.0.2.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\documentformat.openxml\\2.5.0\\documentformat.openxml.2.5.0.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\google.apis\\1.55.0\\google.apis.1.55.0.nupkg.sha512",
@@ -93,6 +94,7 @@
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath\\22.4.38.42025\\uipath.22.4.38.42025.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.3\\uipath.activities.runtimegovernance.1.1.3.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.connectionclient\\1.3.0\\uipath.connectionclient.1.3.0.nupkg.sha512",
+    "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\uipath.credentials.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.dataservice.activities\\21.10.1\\uipath.dataservice.activities.21.10.1.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\uipath.excel.activities.2.12.3.nupkg.sha512",
     "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\uipath.imageprocessing.22.4.1.nupkg.sha512",

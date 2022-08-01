@@ -222,18 +222,6 @@
         "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5"
-    },
-    {
-      "Package": {
-        "Id": "UiPathTeam.Documents.TDDGenerator",
-        "Version": "1.4.7221.18964"
-      },
-      "Assemblies": [
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\lib/net461/Newtonsoft.Json.dll",
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\lib/net461/UPathTeam.Documents.TDDGenerator.dll",
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\lib/net461/Xceed.Words.NET.dll"
-      ],
-      "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964"
     }
   ],
   "Conflicts": [],
@@ -1552,11 +1540,6 @@
           "Item2": "[2.11.0, )"
         }
       ]
-    },
-    "UiPathTeam.Documents.TDDGenerator": {
-      "Id": "UiPathTeam.Documents.TDDGenerator",
-      "Version": "1.4.7221.18964",
-      "Dependencies": []
     }
   },
   "AllPackages": [
@@ -2614,18 +2597,6 @@
         "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipath.vision\\3.3.0"
-    },
-    {
-      "Package": {
-        "Id": "UiPathTeam.Documents.TDDGenerator",
-        "Version": "1.4.7221.18964"
-      },
-      "Assemblies": [
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\lib\\net461\\Newtonsoft.Json.dll",
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\lib\\net461\\UPathTeam.Documents.TDDGenerator.dll",
-        "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964\\lib\\net461\\Xceed.Words.NET.dll"
-      ],
-      "Path": "C:\\Users\\TESSY ADAMS\\.nuget\\packages\\uipathteam.documents.tddgenerator\\1.4.7221.18964"
     }
   ]
 }
