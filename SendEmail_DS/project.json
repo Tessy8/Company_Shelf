@@ -16,12 +16,12 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "Tessy",
       "namespace": "SendEmail_DS",
-      "uniqueReference": "mo9mwMpnpKzHQNEJmgDNHhq5/jvnCg3ErD76iniZJwI="
+      "uniqueReference": "a1iE5rudPABUTUYjEnFSx7Krglh2KsOWGd/liHumDpU="
     }
   ],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.3.0",
-  "projectVersion": "1.0.10",
+  "projectVersion": "1.0.11",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

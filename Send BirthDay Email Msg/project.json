@@ -16,12 +16,12 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "Tessy",
       "namespace": "Send_BirthDay_Email_Msg",
-      "uniqueReference": "vnEzBwKfa5wKdxE0eHzQ/lqY0Tx4Gdw44ZWuAUAk9fE="
+      "uniqueReference": "rV3K+lHU+EWOl86edmw00hIEkKdCMewOcOSQk4KFVUA="
     }
   ],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.3.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
