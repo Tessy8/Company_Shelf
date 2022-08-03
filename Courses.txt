@@ -1,0 +1,44 @@
+Introduction to C# Programming and Unity  == 19 hours
+https://www.coursera.org/learn/introduction-programming-unity
+
+More C# Programming and Unity == 23 hours
+https://www.coursera.org/learn/more-programming-unity
+
+Create a Simple Desktop App with VB.NET == 2 hours   *** $9.99
+https://www.coursera.org/projects/create-simple-desktop-app-vbnet
+
+Work with Controls and Properties in VB.NET == 2 hours  *** $9.99
+https://www.coursera.org/projects/work-controls-properties-vbnet
+
+Explore Variables and Data Types in VB.NET == 2 hours  *** $9.99
+https://www.coursera.org/projects/explore-variables-datatypes-vbnet
+
+Building Test Automation Framework using Selenium and TestNG == 3 hours  *** $9.99
+https://www.coursera.org/projects/building-test-automation-framework-using-selenium-and-testng
+
+Automate an e-commerce web application using Selenium & Java == 2 hours  *** $9.99
+https://www.coursera.org/projects/automate-e-commerce-web-application-using-selenium-java
+
+Create your first test automation script - Selenium and C# == 2 hours  *** $9.99
+https://www.coursera.org/projects/create-first-test-automation-script-using-selenium-and-c-sharp
+
+
+
+
+
+
+He'd pay for one month... We should prepare for 2 weeks then we'd get the certificates in 4 weeks
+
+
+Why are you applying for financial aid?
+Hello,
+I am Testimony, a 4th year student studying Electrical and Electronics Engineering in Nigeria. I really love learning; I find joy in discovering new things. I would really love to be a Robotics Engineer in the nearest future.
+I am applying for this financial aid as I would love to further my skills by learning C#. I believe this course is a good way to start. 
+I am a student and I do not have the monetary capabilities to pay for  this course and that is why I am applying for this financial aid.  Also, my parents are both lecturers in a federal college, but federal and state universities in my country are on a strike action. This means that for the past 5-6 months, my parents have not been paid salaries. So I can't ask  them for money to take this course.
+I would really be grateful if I am given a financial aid to take this course.
+Thank you!
+
+How will your selected course help with your goals?
+I love learning and I take every opportunity possible to learn. I recently started learning Robotics Process Automation with UiPath and I discovered that I need some C# knowledge to adequately write codes with UiPath. This course will help me to write codes to perform certain tasks that UiPath activities can't do, then I will Invoke the codes I've written with C# into the UiPath process I'm working on.
+Learning this course will also help me understand how UiPath works better as it was built with C#. Previously, I have had to go to Stack Overflow to copy and paste codes with C# when I need them. This doesn't work most times as I do not understand the language and I wouldn't know what to change for the C# code to work.
+I believe learning C# will make building processes with UiPath easier for me to do and also enable me to perform tasks I can't do currently.
