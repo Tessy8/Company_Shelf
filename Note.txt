@@ -40,6 +40,7 @@ COMPANY SHELF
 ***If Email is not sent, send email to ... Try Catch?
 ***Incorporate search for an employee _/
 ***Add .Replace("{Birthday}", item.BIRTHDAY.ToString). to SendEmail_DS _/
+***Day saves as -1; confirm if there's a fix
 
 
 https://cloud.uipath.com/tessydmofxkc/apps_/default/run/production/IDea2cbcf7b28742d98e6adc49acee4f11
@@ -63,5 +64,5 @@ REMOVED FROM PDD
 
 Api call quota reached. Retry after next UTC day 00:00. Env: 87d8e8fb-8900-ed11-b47a-28187815670d
 
-Add feature to send scheduled birthday messages...
+Add feature to send scheduled birthday messages...   _/
 How to integrate the app into a website? -> Jot down
