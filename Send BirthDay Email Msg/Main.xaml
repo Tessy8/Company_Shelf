@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="834,522" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:s="clr-namespace:Send_BirthDay_Email_Msg;assembly=DataService.Send_BirthDay_Email_Msg" xmlns:s1="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="922,1159" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:s="clr-namespace:Send_BirthDay_Email_Msg;assembly=DataService.Send_BirthDay_Email_Msg" xmlns:s1="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
       <x:String>System.Activities</x:String>
@@ -78,22 +78,22 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence &quot;Send Birthday Email&quot;" sap:VirtualizedContainerService.HintSize="480,457" sap2010:WorkflowViewState.IdRef="Sequence_39">
+  <Sequence DisplayName="Sequence &quot;Send Birthday Email&quot;" sap:VirtualizedContainerService.HintSize="480,1094" sap2010:WorkflowViewState.IdRef="Sequence_39">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try to Send Birthday Email" sap:VirtualizedContainerService.HintSize="438,365" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try to Send Birthday Email" sap:VirtualizedContainerService.HintSize="438,1002" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="This workflow runs once a day and sends emails to customers and employees on their birthdays." DisplayName="Send Birthday Email" sap:VirtualizedContainerService.HintSize="200,138" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap2010:Annotation.AnnotationText="This workflow runs once a day and sends emails to customers and employees on their birthdays." DisplayName="Send Birthday Email" sap:VirtualizedContainerService.HintSize="376,775" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="ss:SecureString" Name="pwd" />
             <Variable x:TypeArguments="x:String" Name="username" />
@@ -105,7 +105,7 @@
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
@@ -127,7 +127,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </p:GetSecureCredential>
-          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Ensures maximum records are queried." DisplayName="Do While" sap:VirtualizedContainerService.HintSize="334,262" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Ensures maximum records are queried." Condition="[Counter &lt; MaxThreshold]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="334,262" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
             <ui:InterruptibleDoWhile.Body>
               <Sequence sap2010:Annotation.AnnotationText="The maximum number of records that can be queried is 1000.&#xA;This loops 10 times in order to query 10000 records." DisplayName="Loop through" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_1">
                 <Sequence.Variables>
@@ -286,19 +286,20 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Loop through CustomersRecord" sap:VirtualizedContainerService.HintSize="682,1137" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Loop through CustomersRecord" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" DisplayName="For Each item in CustomersRecord" sap:VirtualizedContainerService.HintSize="640,1045" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CustomersRecord]">
+                        <ui:ForEach x:TypeArguments="s:CustomersSheet" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Send email to customer if it's their birthday." DisplayName="For Each item in CustomersRecord" sap:VirtualizedContainerService.HintSize="434,266" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CustomersRecord]">
                           <ui:ForEach.Body>
                             <ActivityAction x:TypeArguments="s:CustomersSheet">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="s:CustomersSheet" Name="item" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,922" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="PresentDate" />
                                   <Variable x:TypeArguments="x:String" Name="CustomerBday" />
@@ -309,23 +310,30 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[item.BIRTHDAY.ToString &lt;&gt; &quot;&quot;]" DisplayName="If birthday is in record, check if the birthday is today" sap:VirtualizedContainerService.HintSize="562,830" sap2010:WorkflowViewState.IdRef="If_2">
+                                <If Condition="[item.BIRTHDAY.ToString &lt;&gt; &quot;&quot;]" DisplayName="If birthday is in record, check if the birthday is today" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Check if it's the customer's birthday" sap:VirtualizedContainerService.HintSize="526,644" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <Sequence DisplayName="Check if it's the customer's birthday" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign DisplayName="Assign Today's Date" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <Assign DisplayName="Assign Today's Date" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[PresentDate]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[DateTime.Parse(Date.Now.ToString).ToString("MM/dd")]</InArgument>
+                                          <InArgument x:TypeArguments="x:String">[DateTime.Parse(Date.Now.AddDays(-1).ToString).ToString("MM/dd")]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign DisplayName="Assign Customer's Bdae" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                      <Assign DisplayName="Assign Customer's Bdae" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[CustomerBday]</OutArgument>
                                         </Assign.To>
@@ -333,7 +341,7 @@
                                           <InArgument x:TypeArguments="x:String">[DateTime.Parse(item.BIRTHDAY.ToString).ToString("MM/dd")]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                      <Assign DisplayName="Assign Email address" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
                                         </Assign.To>
@@ -341,10 +349,10 @@
                                           <InArgument x:TypeArguments="x:String">[item.EMAIL]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <If Condition="[PresentDate = CustomerBday And EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If customer bdae, send email" sap:VirtualizedContainerService.HintSize="484,252" sap2010:WorkflowViewState.IdRef="If_1">
+                                      <If Condition="[PresentDate = CustomerBday And EmailAddress &lt;&gt; &quot;&quot;]" DisplayName="If customer bdae, send email" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_1">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
@@ -417,9 +425,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                   <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[EmailBody]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                     <ui:SendMail.Files>
                                                       <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                        <InArgument x:TypeArguments="x:String">
-                                                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CustomerFilePath" />
-                                                        </InArgument>
+                                                        <InArgument x:TypeArguments="x:String">[CustomerFilePath]</InArgument>
                                                       </scg:List>
                                                     </ui:SendMail.Files>
                                                     <sap:WorkflowViewStateService.ViewState>
@@ -463,6 +469,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:ForEach>
@@ -486,22 +493,22 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <ui:ForEach x:TypeArguments="s:EmployeesSheet" CurrentIndex="{x:Null}" DisplayName="For Each item in EmployeesRecord" sap:VirtualizedContainerService.HintSize="562,467" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[EmployeesRecord]">
+                      <ui:ForEach x:TypeArguments="s:EmployeesSheet" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Send email to customer if it's their birthday." DisplayName="For Each item in EmployeesRecord" sap:VirtualizedContainerService.HintSize="434,266" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[EmployeesRecord]">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="s:EmployeesSheet">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="s:EmployeesSheet" Name="item" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,344" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_34">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <If Condition="[item.BIRTHDAY.ToString &lt;&gt; &quot;&quot;]" DisplayName="If birthday is in record, check if the birthday is today" sap:VirtualizedContainerService.HintSize="484,252" sap2010:WorkflowViewState.IdRef="If_15">
+                              <If Condition="[item.BIRTHDAY.ToString &lt;&gt; &quot;&quot;]" DisplayName="If birthday is in record, check if the birthday is today" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_15">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -521,7 +528,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                         <OutArgument x:TypeArguments="x:String">[PresentDate]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
-                                        <InArgument x:TypeArguments="x:String">[DateTime.Parse(Date.Now.ToString).ToString("MM/dd")]</InArgument>
+                                        <InArgument x:TypeArguments="x:String">[DateTime.Parse(Date.Now.AddDays(-1).ToString).ToString("MM/dd")]</InArgument>
                                       </Assign.Value>
                                     </Assign>
                                     <Assign DisplayName="Assign Employee's Bdae" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_15">
@@ -616,9 +623,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                                                 <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[EmailBody]" DisplayName="Send SMTP Mail Message to customer" Email="[username]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendMail_6" IsBodyHtml="True" Password="[new System.Net.NetworkCredential(string.Empty, pwd).Password]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[EmailSubject]" To="[EmailAddress]">
                                                   <ui:SendMail.Files>
                                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                                      <InArgument x:TypeArguments="x:String">
-                                                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmployeeFilePath" />
-                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String">[EmployeeFilePath]</InArgument>
                                                     </scg:List>
                                                   </ui:SendMail.Files>
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -662,6 +667,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEach>
@@ -692,9 +698,6 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
                 </Assign>
               </Sequence>
             </ui:InterruptibleDoWhile.Body>
-            <ui:InterruptibleDoWhile.Condition>
-              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Counter &lt; MaxThreshold" />
-            </ui:InterruptibleDoWhile.Condition>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -786,7 +789,7 @@ Replace("{name}", item.NAME).Replace("{address}", item.ADDRESS).Replace("{phone}
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s1:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message (Error)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;There was an error while sending birthday email.&quot;]">
+            <ui:LogMessage DisplayName="Log Message (Error)" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;There was an error while sending birthday email.&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
