@@ -1,0 +1,13 @@
+State it, Explain It, Show it; Conclude it
+Intro... -> name, certifications, what you do. 
+Thesis: Company Shelf -> What is it? 
+
+What does it do? It manages customers and employees' details, send emails and saves transactions.
+
+- manages customers and employees' details
+- send emails
+- saves transactions and notes
+Other functionalities: download sheets
+Improvements: store details in Gsheet -> scalable to add other functionalities
+
+How can business owners use it? Requirements -> PDD

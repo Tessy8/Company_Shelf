@@ -17,12 +17,12 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "Tessy",
       "namespace": "Download_Sheets",
-      "uniqueReference": "UrD0ehFLZKYCRlWeFM+cgvhcdKBTfDVd7TmLy+DG6IU="
+      "uniqueReference": "EB4FEYnuZbl5Pa5xaF5fPL8y4hRt+b8mU0gr7xulcac="
     }
   ],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.3.0",
-  "projectVersion": "1.0.4",
+  "projectVersion": "1.0.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
